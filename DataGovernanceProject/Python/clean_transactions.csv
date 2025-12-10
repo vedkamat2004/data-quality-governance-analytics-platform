@@ -1,0 +1,4 @@
+txn_id,amount,date,country,customer_id,parsed_date,missing_value_fail,negative_amount_fail,duplicate_txn_fail,invalid_date_fail,future_date_fail,row_status
+1,200.0,2024-12-01,IN,C001,2024-12-01,False,False,False,False,False,PASS
+3,300.0,2025-01-01,US,C003,2025-01-01,False,False,False,False,False,PASS
+7,250.0,2024-12-05,FR,C006,2024-12-05,False,False,False,False,False,PASS

@@ -1,0 +1,10 @@
+txn_id,amount,date,country,customer_id,parsed_date,missing_value_fail,negative_amount_fail,duplicate_txn_fail,invalid_date_fail,future_date_fail,row_status
+1,200.0,2024-12-01,IN,C001,2024-12-01,False,False,False,False,False,PASS
+2,-50.0,2024-12-01,UK,C002,2024-12-01,False,True,False,False,False,FAIL
+3,300.0,2025-01-01,US,C003,2025-01-01,False,False,False,False,False,PASS
+4,120.0,2024-11-29,IN,C001,2024-11-29,False,False,True,False,False,FAIL
+4,120.0,2024-11-29,IN,C001,2024-11-29,False,False,True,False,False,FAIL
+5,300.0,2024-12-03,,C004,2024-12-03,True,False,False,False,False,FAIL
+6,,2025-13-01,IN,C005,,True,False,False,True,False,FAIL
+7,250.0,2024-12-05,FR,C006,2024-12-05,False,False,False,False,False,PASS
+8,500.0,2024-12-07,US,,2024-12-07,True,False,False,False,False,FAIL

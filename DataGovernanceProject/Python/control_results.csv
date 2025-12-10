@@ -1,0 +1,6 @@
+check_name,count,status
+missing_values,3,fail
+negative_amounts,1,fail
+duplicate_txn_id,2,fail
+invalid_dates,1,fail
+future_dates,0,pass
